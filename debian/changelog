@@ -1,5 +1,40 @@
-template-repository (1.0-1) unstable; urgency=medium
+sgmllib3k (1.0.0-4) unstable; urgency=low
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set field Upstream-Name in debian/copyright.
+  * Update standards version to 4.5.0, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+  * debian/compat
+    - drop in favor of d/control
+
+  [ Debian Janitor ]
+  * Update watch file format version to 4.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 06 Jun 2022 23:10:14 -0400
+
+sgmllib3k (1.0.0-3) unstable; urgency=low
+
+  * debian/tests/control, debian/tests/pkg-python/import-name:
+    Use autodep8 instead of manually specifying a test.
+
+ -- Mikhail Gusarov <dottedmag@debian.org>  Sun, 05 Jan 2020 01:00:23 +0100
+
+sgmllib3k (1.0.0-2) unstable; urgency=low
+
+  * debian/tests/control: Override default testsuite run by autopkgtest.
+
+ -- Mikhail Gusarov <dottedmag@debian.org>  Wed, 01 Jan 2020 15:40:52 +0100
+
+sgmllib3k (1.0.0-1) unstable; urgency=medium
+
+  * Initial Release (Closes: #946031)
+
+ -- Mikhail Gusarov <dottedmag@debian.org>  Tue, 03 Dec 2019 08:45:53 +0100
